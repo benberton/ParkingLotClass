@@ -3,8 +3,9 @@
 int main()
 {
     Lot a(100);
-    a.fillSpot(10);
-    a.fillSpot(90);
+    for (int i = 0; i < 100; ++i) {
+        a.fillSpot(i);
+    }
     a.printSpotsInUse();
     return 0;
 }

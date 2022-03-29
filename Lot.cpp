@@ -79,3 +79,18 @@ void Lot::printSpotsInUse()
             printSpot(i);
     }
 }
+
+void Lot::deleteSpot(int spotNum)
+{
+    parkingLot[spotNum].name = "";
+    parkingLot[spotNum].color = "";
+    parkingLot[spotNum].manufacturer = "";
+    parkingLot[spotNum].type = "";
+    parkingLot[spotNum].inUse = false;
+}
+
+void Lot::deleteLot()
+{
+    for (int i = 0; i < parkingLotSize; i++)
+        deleteSpot(i);
+}

@@ -25,7 +25,8 @@ public:
     void fillSpot(int spotNum);
     void printAllSpots(void);
     void printSpotsInUse(void);
-
+    void deleteSpot(int spotNum);
+    void deleteLot(void);
 private:
     void printSpot(int spotNum);
     Spot* parkingLot;
